@@ -1,0 +1,8 @@
+# Documentation of the Time Series analysis of Retail Sales data
+
+1. Trending the data
+  1.1 Simple trends: To profile and understand data
+      * Monthly trend: Shown in Figure 1: Monthly Trend and Food Service sales. This data clearly has some patterns, but also has some noice.
+      * Using the date_part function to return just the year from sales_month field and then sum sales. The results are again filtered to kind of business = Retail and food services sales
+      *
+      
