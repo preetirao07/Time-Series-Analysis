@@ -2,7 +2,13 @@
 
 1. Trending the data
   1.1 Simple trends: To profile and understand data
-      * Monthly trend: Shown in Figure 1: Monthly Trend and Food Service sales. This data clearly has some patterns, but also has some noice.
+      * Monthly trend: Shown in Figure 1: Monthly Trend of Retail and Food Service sales. This data clearly has some patterns, but also has some noice.
       * Using the date_part function to return just the year from sales_month field and then sum sales. The results are again filtered to kind of business = Retail and food services sales
-      *
+      * So we have a smoother time series that is increasing over time (as expected because the sales values are not adjusted for inflation)
+      * Sales for etail and Food Service sales fell in 2009, during the global financial crisis in US.
+      * Then growing and sales were flat in 2020 compared to 2019, due to impact of the COVID-19 pandemic, also shown in Figure 2.
+  1.2 Comparing components
+      * Comparison of different categories in business.
+      * 
+
       
