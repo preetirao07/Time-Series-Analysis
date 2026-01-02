@@ -45,3 +45,16 @@ from retail_sales
 where kind_of_business = 'Retail and food services sales, total'
 group by 1
 order by 1 asc
+
+-- Yearly trend of different kind_of_business
+select date_part('year', sales_month) as sales_year , kind_of_business, sum(sales) as sales
+from retail_sales
+group by 1,2
+order by 1 asc;
+
+-- -- Yearly trend of few different kind_of_business in leisure activities: Book stores, Sporting goods stores, Hobby stores
+select date_part('year', sales_month) as sales_year , kind_of_business, sum(sales) as sales
+from retail_sales
+where kind_of_business in ('Book stores', 'Sporting goods stores', 'Hobby, toy, and game stores')
+group by 1,2
+order by 1 asc;
