@@ -58,3 +58,14 @@ from retail_sales
 where kind_of_business in ('Book stores', 'Sporting goods stores', 'Hobby, toy, and game stores')
 group by 1,2
 order by 1 asc;
+
+
+-- sales at women’s clothing stores and at men’s clothing stores
+-- Note: Some string values contain apostrophes
+-- In SQL, apostrophes inside strings must be escaped by doubling them (''),
+-- so they are treated as part of the value rather than the end of the string
+
+select sales_month, kind_of_business, sales
+from retail_sales
+where kind_of_business in ('Men''s clothing stores', 'Women''s clothing stores');
+
